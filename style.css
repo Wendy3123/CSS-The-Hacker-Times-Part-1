@@ -19,6 +19,12 @@ header{
     padding:20px;
     border-radius: 15px;
     box-shadow: 4px 4px 5px #ddd;
+    text-align:justify;
+}
+
+img{
+    text-align: center;
+    display: inline-block;
 }
 
 .date{
@@ -50,6 +56,10 @@ nav{
     border-top: solid #eee 1px;
     text-align: center;
     border-bottom: solid #eee 1px;
+    position:sticky;
+    top:0px;
+    background-color: white;
+
 }
 
 ul{
@@ -62,8 +72,7 @@ nav li{
 nav li a{
     text-decoration: none;
     padding-right: 1%;
-    color:#777
-    
+    color:#777;
 }
 
 .firstpic{
@@ -80,4 +89,38 @@ nav li a{
 
 h4{
     font-family: 'Roboto Slab', serif;
+}
+
+.NEW-articles{
+    border-top: solid #eee 1px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.grid-wrapper{
+    display:grid;
+    gap:10px;
+    grid-auto-rows: minmax(100px,auto);
+    text-decoration: none;
+    list-style: none;
+}
+
+.col-one{
+    grid-column: 1;
+    grid-row: 1; 
+}
+
+.col-two{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.col-three{
+    grid-column: 3;
+    grid-row: 1;
+}
+
+section{
+    width:50%;
 }
